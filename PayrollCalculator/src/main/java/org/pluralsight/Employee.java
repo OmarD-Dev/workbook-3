@@ -41,6 +41,9 @@ public class Employee {
         this.payRate = payRate;
     }
 
+    public double getCrossPay() {
+        return this.hoursWorked * this.payRate;
+    }
     @Override
     public String toString() {
         return "Employee{" +
@@ -51,9 +54,7 @@ public class Employee {
                 '}';
     }
 
-    public double getCrossPay() {
-        return this.hoursWorked * this.payRate;
-    }
+
 
 
 }
