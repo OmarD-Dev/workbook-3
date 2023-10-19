@@ -40,16 +40,5 @@ public class Main {
             }
         }
     }
-    public static int getInput(Scanner scanner, String prompt){
-        System.out.println(prompt);
-        int scannedInt = 0;
-        boolean finished = false;
-
-        while (!done){
-            scannedInt = scanner.nextInt();
-
-        }
-
-    }
 }
 
