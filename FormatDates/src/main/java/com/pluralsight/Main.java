@@ -12,20 +12,24 @@ public class Main {
 
         LocalDateTime today = LocalDateTime.now();
         //Format 1
-        DateTimeFormatter date = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        System.out.println(today.format(date));
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        System.out.println(today.format(format));
 
         //Format 2
-        DateTimeFormatter date2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        System.out.println(today.format(date2));
+        DateTimeFormatter format2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        System.out.println(today.format(format2));
 
         //Format 3
-        DateTimeFormatter date3 = DateTimeFormatter.ofPattern("MMMM d, yyyy");
-        System.out.println(today.format(date3));
+        DateTimeFormatter format3 = DateTimeFormatter.ofPattern("MMMM d, yyyy");
+        System.out.println(today.format(format3));
 
         //Format 4
-        DateTimeFormatter date4 = DateTimeFormatter.ofPattern("EEEE, MMM, d, yyyy HH:mm");
-        System.out.println(today.format(date4));
+        DateTimeFormatter format4 = DateTimeFormatter.ofPattern("EEEE, MMM d, yyyy hh:mm");
+        System.out.println(today.format(format4));
+
+        //Challenge Format
+        DateTimeFormatter format5 =  DateTimeFormatter.ofPattern("hh:mm 'on' dd-MM-yyyy");
+        System.out.println(today.format(format5));
     }
 
 }
